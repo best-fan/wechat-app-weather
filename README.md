@@ -5,12 +5,12 @@
    *	使用多种数据来源对数据实现混合排序加载
    *	通过不同的天气状态显示不同的天气图片
 ## 项目截图：
-### 登录界面
-![界面](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-29-732_com.tencent.mm.png)
 ### 主界面
-![主界面](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-38-901_com.tencent.mm.png)
-### 用户管理
-![用户管理](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-53-882_com.tencent.mm.png)
+![主界面](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-29-732_com.tencent.mm.png)
+### 城市选择界面
+![城市选择](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-38-901_com.tencent.mm.png)
+### 更多天气
+![更多天气](https://github.com/best-fan/wechat-app-weather/blob/master/sree/Screenshot_2018-05-07-20-24-53-882_com.tencent.mm.png)
 
 ## 扫码体验：
 搜索 万福天气
