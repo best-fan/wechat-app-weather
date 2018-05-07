@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/detail/detail",
+	"pages/switchcity/switchcity"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#403059",
+    "navigationBarTitleText": "万福天气",
+    "navigationBarTextStyle": "#ffffff",
+    "enablePullDownRefresh":true
+  }
+}

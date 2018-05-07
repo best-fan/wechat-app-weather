@@ -1,0 +1,176 @@
+<!--index.wxml-->
+<view >
+
+ <image class='img_bac' src='../../img/1{{allresult.hourly.skycon["0"].value}}_b.jpg'></image>
+
+   <view class="top_city" bindtap="showSettingPage">
+    <view class="city_list">
+      <view class="city_item city_item_center">
+        {{desc}}
+      </view>
+    </view>
+  </view> 
+  <view class="today" bindtap="showDetailPage">
+    <view class="temperature">
+      <text>{{someresult.temperature}}°C</text>
+    </view> 
+    <!--滚动文字  -->
+     <swiper class="swiper_container" vertical="true" autoplay="true" circular="true" interval="4000">
+      <block wx:for="{{msgList}}" wx:key="2*this">
+        <swiper-item>
+          <view class="swiper_item">{{item.title}}</view>
+        </swiper-item>
+      </block>
+    </swiper> 
+    <view class="more">
+      <text>{{allresult.minutely.description}}</text>
+    </view> 
+        <view class="more">
+      <text>查看更多</text>
+    </view> 
+  </view> 
+  <!--小时天气  -->
+  <scroll-view class='hourly' scroll-x="true">
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>现在</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["0"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["0"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[0]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[1]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["1"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["1"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[1]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[2]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["2"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["2"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[2]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[3]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["3"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["3"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[3]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[4]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["4"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["4"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[4]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[5]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["5"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["5"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[5]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[6]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["6"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["6"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[6]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[7]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["7"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["7"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[7]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[8]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["8"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["8"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[8]}}</text>
+        </view>
+      </view>
+    </view>
+    <view class='oneHourly'>
+      <view class='oneHourlyFlex'>
+        <view class='hourlyDate'>{{times[9]}}</view>
+        <image class='hourlyImg' src='../../img/1{{allresult.hourly.skycon["9"].value}}.png' mode='aspectFit'></image>
+        <view class='hourlyTmp'>{{allresult.hourly.temperature["8"].value}}°C</view>
+        <view class='hourlyWind'>
+          <text>{{winds[9]}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='dailyForecast'>
+    <view class='daily' style="flex-direction:row;">
+      <view class='dailyDate'>今天</view>
+      <image class='dailyImg' src='../../img/1{{allresult.daily.skycon["0"].value}}.png' mode='aspectFit'></image>
+      <view class='dailyCond'>{{weathers[0]}}</view>
+      <view class='dailyTmp'>{{allresult.daily.temperature["0"].min}}°~{{allresult.daily.temperature["0"].max}}°</view>
+    </view>
+  </view>
+  <view class='dailyForecast'>
+    <view class='daily' style="flex-direction:row;">
+      <view class='dailyDate'>{{dates[1]}}</view>
+      <image class='dailyImg' src='../../img/1{{allresult.daily.skycon["1"].value}}.png' mode='aspectFit'></image>
+      <view class='dailyCond'>{{weathers[1]}}</view>
+      <view class='dailyTmp'>{{allresult.daily.temperature["1"].min}}°~{{allresult.daily.temperature["1"].max}}°</view>
+    </view>
+  </view>
+  <view class='dailyForecast'>
+    <view class='daily' style="flex-direction:row;">
+      <view class='dailyDate'>{{dates[2]}}</view>
+      <image class='dailyImg' src='../../img/1{{allresult.daily.skycon["2"].value}}.png' mode='aspectFit'></image>
+      <view class='dailyCond'>{{weathers[2]}}</view>
+      <view class='dailyTmp'>{{allresult.daily.temperature["2"].min}}°~{{allresult.daily.temperature["2"].max}}°</view>
+    </view>
+  </view>
+  <view class='dailyForecast'>
+    <view class='daily' style="flex-direction:row;">
+      <view class='dailyDate'>{{dates[3]}}</view>
+      <image class='dailyImg' src='../../img/1{{allresult.daily.skycon["3"].value}}.png' mode='aspectFit'></image>
+      <view class='dailyCond'>{{weathers[3]}}</view>
+      <view class='dailyTmp'>{{allresult.daily.temperature["3"].min}}°~{{allresult.daily.temperature["3"].max}}°</view>
+    </view>
+  </view>
+  <view class='dailyForecast'>
+    <view class='daily' style="flex-direction:row;">
+      <view class='dailyDate'>{{dates[4]}}</view>
+      <image class='dailyImg' src='../../img/1{{allresult.daily.skycon["4"].value}}.png' mode='aspectFit'></image>
+      <view class='dailyCond'>{{weathers[4]}}</view>
+      <view class='dailyTmp'>{{allresult.daily.temperature["4"].min}}°~{{allresult.daily.temperature["4"].max}}°</view>
+    </view>
+  </view>
+  <view class='view_end'>更新时间:{{nowtime}}</view>
+</view>

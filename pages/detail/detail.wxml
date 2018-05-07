@@ -1,0 +1,103 @@
+<!--pages/detail/detail.wxml-->
+<!--detail.wxml-->
+<view>
+ <image class='img_bac' src='../../img/1{{allresult.daily.skycon["0"].value}}_b.jpg'></image>
+  <view class="top_city">
+    <view class="city_list">
+      <view class="city_item city_item_center">
+        {{locating}}
+      </view>
+    </view>
+  </view>
+
+  <view class="today">
+    <view class="more date">
+      <text>{{datetime}}</text>
+    </view>
+    <view class="day-night">
+      <view class="weather">
+        <text class="day-desc">白天</text>
+        <image class="pic" src='../../img/1{{allinfor.daily.skycon["0"].value}}.png'></image>
+        <view class="desc">
+          <text>最高 {{otherinfor.temphigh}}°</text>
+          <text>{{windwhite}}</text>
+        </view>
+      </view>
+      <view class="weather split"></view>
+      <view class="weather">
+        <view class="desc" style="align-items:flex-end;">
+          <text>{{otherinfor.templow}}°最低</text>
+          <text>{{windblack}} </text>
+        </view>
+        <image class="pic" src='../../img/1{{allinfor.daily.skycon["1"].value}}.png'></image>
+        <text class="day-desc">夜间</text>
+      </view>
+    </view>
+    <!-- <view class="temperature">
+        <text>{{weatherInfo.weather[0].info.night[2]}} ~ {{weatherInfo.weather[0].info.day[2]}}°</text>
+      </view> -->
+    <view class="more">
+      <text>日出：{{allinfor.daily.astro["0"].sunrise.time}}</text>
+      <text>日落：{{allinfor.daily.astro["0"].sunset.time}}</text>
+    </view>
+    <view class="more">
+      <text>{{allinfor.hourly.description}}</text>
+      <text> </text>
+    </view>
+  </view>
+  <view class="today-bottom"></view>
+  <view class="card-list">
+    <view class="card life">
+      <view class="title">生活指数</view>
+      <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["0"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["0"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["1"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["1"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["2"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["2"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["3"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["3"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["4"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["4"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["5"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["5"].ivalue}}</view>
+        </view>
+      </view>
+       <view class="item">
+        <view class="line">
+          <!-- <image class="pic" src="{{item.pic}}"></image> -->
+          <view class="name">{{otherinfor.index["6"].iname}}：</view>
+          <view class="desc">{{otherinfor.index["6"].ivalue}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
